@@ -1,0 +1,37 @@
+{
+  "title": "About MorseTeacher Plugin",
+  "story": [
+  {
+    "type": "paragraph",
+    "id": "969cc7caa61cdbb0",
+    "text": "Here we describe the purpose of the plugin and include a sample."
+  },
+  {
+    "type": "morseteacher",
+    "id": "579aa3d85edfd6b0",
+    "text": "This is text in the new plugin. You can *double-click* to edit it too."
+  }
+],
+  "journal": [
+  {
+    "type": "create",
+    "item": {
+      "title": "About MorseTeacher Plugin",
+      "story": [
+  {
+    "type": "paragraph",
+    "id": "969cc7caa61cdbb0",
+    "text": "Here we describe the purpose of the plugin and include a sample."
+  },
+  {
+    "type": "morseteacher",
+    "id": "579aa3d85edfd6b0",
+    "text": "This is text in the new plugin. You can *double-click* to edit it too."
+  }
+]
+    },
+    "date": 1423444063000,
+    "certificate": "from mkplugin.sh"
+  }
+]
+}
