@@ -1,37 +1,97 @@
 {
   "title": "About MorseTeacher Plugin",
   "story": [
-  {
-    "type": "paragraph",
-    "id": "969cc7caa61cdbb0",
-    "text": "Here we describe the purpose of the plugin and include a sample."
-  },
-  {
-    "type": "morseteacher",
-    "id": "579aa3d85edfd6b0",
-    "text": "This is text in the new plugin. You can *double-click* to edit it too."
-  }
-],
-  "journal": [
-  {
-    "type": "create",
-    "item": {
-      "title": "About MorseTeacher Plugin",
-      "story": [
-  {
-    "type": "paragraph",
-    "id": "969cc7caa61cdbb0",
-    "text": "Here we describe the purpose of the plugin and include a sample."
-  },
-  {
-    "type": "morseteacher",
-    "id": "579aa3d85edfd6b0",
-    "text": "This is text in the new plugin. You can *double-click* to edit it too."
-  }
-]
+    {
+      "type": "paragraph",
+      "id": "969cc7caa61cdbb0",
+      "text": "This plugin teaches you to receive Morse code. It starts with a few letters and adds more when it sees that you are ready."
     },
-    "date": 1423444063000,
-    "certificate": "from mkplugin.sh"
-  }
-]
+    {
+      "type": "paragraph",
+      "id": "f83d3f46a66b357e",
+      "text": "This is the easiest way to learn code because the computer thinks about the practice you need next instead of wasting your time with stuff you already know or confusing you with stuff that you don't."
+    },
+    {
+      "type": "morseteacher",
+      "id": "579aa3d85edfd6b0",
+      "text": "q --.- 100\n7 --... 100\nz --.. 100\ng --. 100\n0 -----\n9 ----.\n8 ---..\no ---\n1 .----\nj .---\np .--.\nw .--\nl .-..\nr .-.\na .-\nm --\n6 -....\nb -...\nx -..-\nd -..\ny -.--\nc -.-.\nk -.-\nn -.\n2 ..---\n3 ...--\nf ..-.\nu ..-\n4 ....-\n5 .....\nv ...-\nh ....\ns ...\ni ..\nt -\ne ."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "About MorseTeacher Plugin",
+        "story": [
+          {
+            "type": "paragraph",
+            "id": "969cc7caa61cdbb0",
+            "text": "Here we describe the purpose of the plugin and include a sample."
+          },
+          {
+            "type": "morseteacher",
+            "id": "579aa3d85edfd6b0",
+            "text": "This is text in the new plugin. You can *double-click* to edit it too."
+          }
+        ]
+      },
+      "date": 1423444063000,
+      "certificate": "from mkplugin.sh"
+    },
+    {
+      "type": "edit",
+      "id": "969cc7caa61cdbb0",
+      "item": {
+        "type": "paragraph",
+        "id": "969cc7caa61cdbb0",
+        "text": "This plugin teaches you to receive Morse code. It starts with a few letters and adds more when it sees that you are ready."
+      },
+      "date": 1425437539716
+    },
+    {
+      "type": "add",
+      "id": "f83d3f46a66b357e",
+      "item": {
+        "type": "paragraph",
+        "id": "f83d3f46a66b357e",
+        "text": "This is the easiest way to learn code because the computer thinks about the practice you need next instead of wasting your time with stuff you already know or confusing you with stuff that you don't."
+      },
+      "after": "969cc7caa61cdbb0",
+      "date": 1425437549112
+    },
+    {
+      "type": "fork",
+      "date": 1425438385609
+    },
+    {
+      "type": "edit",
+      "id": "579aa3d85edfd6b0",
+      "item": {
+        "type": "morseteacher",
+        "id": "579aa3d85edfd6b0",
+        "text": "q --.-\n7 --...\nz --..\ng --.\n0 -----\n9 ----.\n8 ---..\no ---\n1 .----\nj .---\np .--.\nw .--\nl .-..\nr .-.\na .-\nm --\n6 -....\nb -...\nx -..-\nd -..\ny -.--\nc -.-.\nk -.-\nn -.\n2 ..---\n3 ...--\nf ..-.\nu ..-\n4 ....-\n5 .....\nv ...-\nh ....\ns ...\ni ..\nt -\ne ."
+      },
+      "date": 1425438397100
+    },
+    {
+      "type": "edit",
+      "id": "579aa3d85edfd6b0",
+      "item": {
+        "type": "morseteacher",
+        "id": "579aa3d85edfd6b0",
+        "text": "q --.- 0\n7 --... 0\nz --.. 0\ng --. 0\n0 -----\n9 ----.\n8 ---..\no ---\n1 .----\nj .---\np .--.\nw .--\nl .-..\nr .-.\na .-\nm --\n6 -....\nb -...\nx -..-\nd -..\ny -.--\nc -.-.\nk -.-\nn -.\n2 ..---\n3 ...--\nf ..-.\nu ..-\n4 ....-\n5 .....\nv ...-\nh ....\ns ...\ni ..\nt -\ne ."
+      },
+      "date": 1425438437877
+    },
+    {
+      "type": "edit",
+      "id": "579aa3d85edfd6b0",
+      "item": {
+        "type": "morseteacher",
+        "id": "579aa3d85edfd6b0",
+        "text": "q --.- 100\n7 --... 100\nz --.. 100\ng --. 100\n0 -----\n9 ----.\n8 ---..\no ---\n1 .----\nj .---\np .--.\nw .--\nl .-..\nr .-.\na .-\nm --\n6 -....\nb -...\nx -..-\nd -..\ny -.--\nc -.-.\nk -.-\nn -.\n2 ..---\n3 ...--\nf ..-.\nu ..-\n4 ....-\n5 .....\nv ...-\nh ....\ns ...\ni ..\nt -\ne ."
+      },
+      "date": 1425443340499
+    }
+  ]
 }
