@@ -1,5 +1,5 @@
 ctx = null
-copy = false
+trial = null
 
 # sound
 
@@ -51,22 +51,22 @@ parse = (text) ->
     alphabet.push {letter: 'q', morse: '--.-', expect: 60}
 
 choose = ->
-  choice = 0
-  for trial in alphabet
-    choice += +(trial.expect || 0)
-  choice = Math.floor Math.random() * choice
-  for trial in alphabet
-    choice -= +(trial.expect || 0)
-    return trial if choice < 0
+  area = 0
+  for choice in alphabet
+    area += +(choice.expect || 0)
+  area = Math.floor Math.random() * area
+  for choice in alphabet
+    area -= +(choice.expect || 0)
+    return choice if area < 0
 
-plot = (trial) ->
-  return '' unless trial.expect
-  style = "float: left; width: 10px; height: #{trial.expect}px; margin-right: 1px; background-color: #bbb; text-align:center;"
-  "<span style=\"#{style}\">#{trial.letter}</span>"
+plot = (choice) ->
+  return '' unless choice.expect
+  style = "float: left; width: 10px; height: #{choice.expect}px; margin-right: 1px; background-color: #bbb; text-align:center;"
+  "<span style=\"#{style}\">#{choice.letter}</span>"
 
 graph = ($graph) ->
   $graph.empty()
-  $graph.append (plot trial for trial in alphabet).join('')
+  $graph.append (plot choice for choice in alphabet).join('')
 
 # plugin
 
