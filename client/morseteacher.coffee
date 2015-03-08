@@ -43,17 +43,30 @@ alphabet = []
 
 parse = (text) ->
   for line in text.split /\n/
-    [all, letter, morse, expect] = line.match /(.) ([.-]+) *(\d+)?/
-    alphabet.push {letter, morse, expect}
+    if matches = line.match /(.) ([.-]+) *(\d+)?/
+      [all, letter, morse, expect] = matches
+      alphabet.push {letter, morse, expect}
+  if alphabet.length == 0
+    alphabet.push {letter: 'c', morse: '-.-.', expect: 100}
+    alphabet.push {letter: 'q', morse: '--.-', expect: 60}
 
 choose = ->
-  choose = 0
+  choice = 0
   for trial in alphabet
-    choose += +(trial.expect || 0)
-  choose = Math.floor Math.random() * choose
+    choice += +(trial.expect || 0)
+  choice = Math.floor Math.random() * choice
   for trial in alphabet
-    choose -= +(trial.expect || 0)
-    return trial if choose < 0
+    choice -= +(trial.expect || 0)
+    return trial if choice < 0
+
+plot = (trial) ->
+  return '' unless trial.expect
+  style = "float: left; width: 10px; height: #{trial.expect}px; margin-right: 1px; background-color: #bbb; text-align:center;"
+  "<span style=\"#{style}\">#{trial.letter}</span>"
+
+graph = ($graph) ->
+  $graph.empty()
+  $graph.append (plot trial for trial in alphabet).join('')
 
 # plugin
 
@@ -64,27 +77,38 @@ expand = (text)->
     .replace />/g, '&gt;'
 
 emit = ($item, item) ->
+  alphabet = []
   parse item.text
-  signal choose().morse
+  trial = choose()
+  signal trial?.morse
 
-  $item.append """
-    <p style="background-color:#eee;padding:15px;">
-      #{expand item.text}
-      <button>copy</button>
-    </p>
+  prompt = """
+    Click here to start.
+    Type what you hear.
+    Correct answers print.
   """
 
+  $item.append """
+    <div style="background-color:#eee;padding:15px;">
+      <div class="graph"></div>
+      <textarea placeholder="#{prompt}" style="margin-top: 10px;"></textarea>
+    </div>
+  """
+
+  graph $item.find('.graph')
+
 bind = ($item, item) ->
-  $button = $item.find('button')
-  $button.on 'click', ->
-    label = if (copy = !copy)
-      cq()
-      'stop'
-    else
-      'copy'
-    $button.text label
-  $item.dblclick ->
-    wiki.textEditor $item, item
+  $textarea = $item.find('textarea')
+    
+  $textarea.on 'keyup', (e,val) ->
+    console.log $textarea.val()
+    graph $item.find('.graph')
+
+
+  $item
+    .dblclick ->
+      wiki.textEditor $item, item
+
 
 window.plugins.morseteacher = {emit, bind} if window?
 module.exports = {expand} if module?
