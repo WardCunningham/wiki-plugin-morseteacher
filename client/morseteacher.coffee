@@ -52,6 +52,15 @@ parse = (text) ->
     alphabet.push {letter: 'c', morse: '-.-.', expect: 100}
     alphabet.push {letter: 'q', morse: '--.-', expect: 60}
 
+format = ->
+  choices = []
+  for choice in alphabet
+    if choice.expect
+      choices.push "#{choice.letter} #{choice.morse} #{Math.round choice.expect}"
+    else
+      choices.push "#{choice.letter} #{choice.morse}"
+  choices.join "\n"
+
 choose = ->
   area = 0
   for choice in alphabet
@@ -82,16 +91,18 @@ advance = ->
       unless choice.expect
         return choice.expect = 60
 
+resume = ->
+  timer 5, ->
+    trial = choose()
+    signal trial.morse
+    observe = 0
 
 score = ->
   old = trial.expect * 0.8
   now = observe * 0.2
   trial.expect = old + now
   advance()
-  timer 5, ->
-    trial = choose()
-    signal trial.morse
-    observe = 0
+  resume()
 
 # plugin
 
@@ -104,8 +115,6 @@ expand = (text)->
 emit = ($item, item) ->
   alphabet = []
   parse item.text
-  trial = choose()
-  signal trial?.morse
 
   prompt = """
     Click here to start.
@@ -124,7 +133,23 @@ emit = ($item, item) ->
 
 bind = ($item, item) ->
   $textarea = $item.find('textarea')
+
+  $textarea.focusin ->
+    resume()
     
+  $textarea.focusout ->
+    revision = format()
+    unless revision is item.text
+      item.text = revision
+      $page = $item.parents('.page:first')
+      wiki.pageHandler.put $page, {type: 'edit', id: item.id, item: item}
+
+  $textarea.on 'keydown', (e) ->
+    if (e.altKey || e.ctlKey || e.metaKey) and e.which == 83 #alt-s
+      $textarea.blur()
+      e.stopPropagation()
+      return false
+
   $textarea.on 'keyup', (e,val) ->
     response = $textarea.val().slice(-1)
     if response is trial.letter
