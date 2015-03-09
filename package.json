@@ -4,14 +4,16 @@
   "description": "Federated Wiki - MorseTeacher Plugin",
   "keywords": [
     "morseteacher",
+    "morse code",
+    "teaching machine",
     "wiki",
     "federated wiki",
     "plugin"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "you@example.com",
-    "url": "http://example.com"
+    "name": "Ward Cunningham",
+    "email": "ward@c2.com",
+    "url": "http://c2.com/morse"
   },
   "contributors": [],
   "scripts": {
@@ -25,7 +27,7 @@
     "expect.js": "*",
     "grunt-mocha-test": "~0.12"
   },
-  "license": "MIT & GPL",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/fedwiki/wiki-plugin-morseteacher.git"

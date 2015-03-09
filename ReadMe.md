@@ -1,6 +1,6 @@
 # Federated Wiki - MorseTeacher Plugin
 
-This plugin, type: morseteacher, extends the markup of the federated wiki.
+This plugin teaches you to understand Morse code. It starts with a few letters and adds more when it sees that you are ready. It saves progress as edits to the page.
 
 ## Build
 
@@ -9,5 +9,5 @@ This plugin, type: morseteacher, extends the markup of the federated wiki.
 
 ## License
 
-MIT & GPL
+MIT
 
