@@ -4,17 +4,37 @@
     {
       "type": "paragraph",
       "id": "969cc7caa61cdbb0",
-      "text": "This plugin teaches you to receive Morse code. It starts with a few letters and adds more when it sees that you are ready."
-    },
-    {
-      "type": "paragraph",
-      "id": "f83d3f46a66b357e",
-      "text": "This is the easiest way to learn code because the computer thinks about the practice you need next instead of wasting your time with stuff you already know or confusing you with stuff that you don't."
+      "text": "This plugin teaches you to understand Morse code. It starts with a few letters and adds more when it sees that you are ready. It saves progress as edits to the page."
     },
     {
       "type": "morseteacher",
       "id": "579aa3d85edfd6b0",
-      "text": "q --.- 100\n7 --... 100\nz --.. 100\ng --. 100\n0 -----\n9 ----.\n8 ---..\no ---\n1 .----\nj .---\np .--.\nw .--\nl .-..\nr .-.\na .-\nm --\n6 -....\nb -...\nx -..-\nd -..\ny -.--\nc -.-.\nk -.-\nn -.\n2 ..---\n3 ...--\nf ..-.\nu ..-\n4 ....-\n5 .....\nv ...-\nh ....\ns ...\ni ..\nt -\ne ."
+      "text": "q --.- 60\n7 --... 70\nz --..\ng --.\n0 -----\n9 ----.\n8 ---..\no ---\n1 .----\nj .---\np .--.\nw .--\nl .-..\nr .-.\na .-\nm --\n6 -....\nb -...\nx -..-\nd -..\ny -.--\nc -.-.\nk -.-\nn -.\n2 ..---\n3 ...--\nf ..-.\nu ..-\n4 ....-\n5 .....\nv ...-\nh ....\ns ...\ni ..\nt -\ne ."
+    },
+    {
+      "type": "paragraph",
+      "id": "f83d3f46a66b357e",
+      "text": "This is the easiest way to learn Morse code. The computer thinks about the listening practice you need most instead of wasting time with familiar letters or confusing with many new letters at once."
+    },
+    {
+      "type": "paragraph",
+      "id": "ad443416c4dcbe1a",
+      "text": "Concentrate on how each letter sounds. Hear the letter as a whole, not dots and dashes.\nType the letters slowly and carefully. You do not need to touch-type."
+    },
+    {
+      "type": "paragraph",
+      "id": "cbe8306dfe91312f",
+      "text": "Practice until you have learned a few new letters. Press cmd/alt-s to save your progress. Recall old versions from history if this gets too hard.\n"
+    },
+    {
+      "type": "paragraph",
+      "id": "de306e980342960e",
+      "text": "Rest in quiet for a few minutes when you are done. Your mind must consolidate what you've learned. Other activity will interfere.\n"
+    },
+    {
+      "type": "paragraph",
+      "id": "a0f108104c59ba4a",
+      "text": "This plugin will teach you to copy at a speed of about five words per minute. Learning to copy faster requires a different kind of practice."
     }
   ],
   "journal": [
@@ -92,6 +112,146 @@
         "text": "q --.- 100\n7 --... 100\nz --.. 100\ng --. 100\n0 -----\n9 ----.\n8 ---..\no ---\n1 .----\nj .---\np .--.\nw .--\nl .-..\nr .-.\na .-\nm --\n6 -....\nb -...\nx -..-\nd -..\ny -.--\nc -.-.\nk -.-\nn -.\n2 ..---\n3 ...--\nf ..-.\nu ..-\n4 ....-\n5 .....\nv ...-\nh ....\ns ...\ni ..\nt -\ne ."
       },
       "date": 1425443340499
+    },
+    {
+      "type": "edit",
+      "id": "969cc7caa61cdbb0",
+      "item": {
+        "type": "paragraph",
+        "id": "969cc7caa61cdbb0",
+        "text": "This plugin teaches you to understand Morse code. It starts with a few letters and adds more when it sees that you are ready. It saves progress as edits to the page."
+      },
+      "date": 1425909925636
+    },
+    {
+      "type": "edit",
+      "id": "579aa3d85edfd6b0",
+      "item": {
+        "type": "morseteacher",
+        "id": "579aa3d85edfd6b0",
+        "text": "q --.- 60\n7 --... 70\nz --..\ng --.\n0 -----\n9 ----.\n8 ---..\no ---\n1 .----\nj .---\np .--.\nw .--\nl .-..\nr .-.\na .-\nm --\n6 -....\nb -...\nx -..-\nd -..\ny -.--\nc -.-.\nk -.-\nn -.\n2 ..---\n3 ...--\nf ..-.\nu ..-\n4 ....-\n5 .....\nv ...-\nh ....\ns ...\ni ..\nt -\ne ."
+      },
+      "date": 1425910003836
+    },
+    {
+      "type": "move",
+      "order": [
+        "969cc7caa61cdbb0",
+        "579aa3d85edfd6b0",
+        "f83d3f46a66b357e"
+      ],
+      "id": "f83d3f46a66b357e",
+      "date": 1425910036407
+    },
+    {
+      "type": "add",
+      "id": "ebba2b41492e07fe",
+      "item": {
+        "type": "paragraph",
+        "id": "ebba2b41492e07fe",
+        "text": "The computer will select a letter favoring those causing trouble. It won't proceed until you type that letter. If you wait just a bit it will show you the letter and then send it again. Let it do this a few times when you hear a new letter."
+      },
+      "after": "f83d3f46a66b357e",
+      "date": 1425910427787
+    },
+    {
+      "type": "add",
+      "id": "ad443416c4dcbe1a",
+      "item": {
+        "type": "paragraph",
+        "id": "ad443416c4dcbe1a",
+        "text": "Concentrate on how each letter sounds. Hear the letter as a whole, not dots and dashes.\nType the letters slowly and carefully. You do not need to touch-type."
+      },
+      "after": "ebba2b41492e07fe",
+      "date": 1425910492349
+    },
+    {
+      "type": "add",
+      "id": "cbe8306dfe91312f",
+      "item": {
+        "type": "paragraph",
+        "id": "cbe8306dfe91312f",
+        "text": "Practice until you have learned a few new letters. Press cmd/alt-s to save your progress. Recall old versions from history if this gets too hard.\n"
+      },
+      "after": "ad443416c4dcbe1a",
+      "date": 1425910676609
+    },
+    {
+      "type": "add",
+      "id": "de306e980342960e",
+      "item": {
+        "type": "paragraph",
+        "id": "de306e980342960e",
+        "text": "Rest for at least 15 minutes in quiet when you are done. Your mind has to consolidate what you've learned. Other activity will interfere.\n"
+      },
+      "after": "cbe8306dfe91312f",
+      "date": 1425910695721
+    },
+    {
+      "type": "add",
+      "id": "a0f108104c59ba4a",
+      "item": {
+        "type": "paragraph",
+        "id": "a0f108104c59ba4a",
+        "text": "Expect to reach a speed of about five words per minute. Learning to copy faster requires a different kind of practice."
+      },
+      "after": "de306e980342960e",
+      "date": 1425910855028
+    },
+    {
+      "type": "edit",
+      "id": "de306e980342960e",
+      "item": {
+        "type": "paragraph",
+        "id": "de306e980342960e",
+        "text": "Rest in quiet for a few minutes when you are done. Your mind will consolidate what you've learned. Other activity interferes.\n"
+      },
+      "date": 1425910946170
+    },
+    {
+      "type": "edit",
+      "id": "de306e980342960e",
+      "item": {
+        "type": "paragraph",
+        "id": "de306e980342960e",
+        "text": "Rest in quiet for a few minutes when you are done. Your mind must consolidate what you've learned. Other activity will interfere.\n"
+      },
+      "date": 1425910975640
+    },
+    {
+      "type": "edit",
+      "id": "a0f108104c59ba4a",
+      "item": {
+        "type": "paragraph",
+        "id": "a0f108104c59ba4a",
+        "text": "This program will teach you to copy at a speed of about five words per minute. Learning to copy faster requires a different kind of practice."
+      },
+      "date": 1425911025088
+    },
+    {
+      "type": "edit",
+      "id": "f83d3f46a66b357e",
+      "item": {
+        "type": "paragraph",
+        "id": "f83d3f46a66b357e",
+        "text": "This is the easiest way to learn Morse code. The computer thinks about the listening practice you need most instead of wasting time with familiar letters or confusing with many new letters at once."
+      },
+      "date": 1425911322401
+    },
+    {
+      "type": "remove",
+      "id": "ebba2b41492e07fe",
+      "date": 1425911324717
+    },
+    {
+      "type": "edit",
+      "id": "a0f108104c59ba4a",
+      "item": {
+        "type": "paragraph",
+        "id": "a0f108104c59ba4a",
+        "text": "This plugin will teach you to copy at a speed of about five words per minute. Learning to copy faster requires a different kind of practice."
+      },
+      "date": 1425911367916
     }
   ]
 }
