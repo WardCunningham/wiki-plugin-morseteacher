@@ -1,5 +1,6 @@
 ctx = null
 trial = null
+observe = 100
 
 # sound
 
@@ -45,6 +46,7 @@ parse = (text) ->
   for line in text.split /\n/
     if matches = line.match /(.) ([.-]+) *(\d+)?/
       [all, letter, morse, expect] = matches
+      expect = +expect if expect?
       alphabet.push {letter, morse, expect}
   if alphabet.length == 0
     alphabet.push {letter: 'c', morse: '-.-.', expect: 100}
@@ -67,6 +69,29 @@ plot = (choice) ->
 graph = ($graph) ->
   $graph.empty()
   $graph.append (plot choice for choice in alphabet).join('')
+
+# adapt
+
+advance = ->
+  worst = 0
+  for choice in alphabet
+    if choice.expect
+      worst = Math.max worst, +choice.expect
+  if worst < 30
+    for choice in alphabet
+      unless choice.expect
+        return choice.expect = 60
+
+
+score = ->
+  old = trial.expect * 0.8
+  now = observe * 0.2
+  trial.expect = old + now
+  advance()
+  timer 5, ->
+    trial = choose()
+    signal trial.morse
+    observe = 0
 
 # plugin
 
@@ -101,9 +126,13 @@ bind = ($item, item) ->
   $textarea = $item.find('textarea')
     
   $textarea.on 'keyup', (e,val) ->
-    console.log $textarea.val()
+    response = $textarea.val().slice(-1)
+    if response is trial.letter
+      score()
+    else
+      $textarea.val $textarea.val().slice(0,-1)
+      observe = 100
     graph $item.find('.graph')
-
 
   $item
     .dblclick ->
