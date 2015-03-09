@@ -70,14 +70,22 @@ choose = ->
     area -= +(choice.expect || 0)
     return choice if area < 0
 
-plot = (choice) ->
+bar = (choice) ->
   return '' unless choice.expect
-  style = "float: left; width: 10px; height: #{choice.expect}px; margin-right: 1px; background-color: #bbb; text-align:center;"
+  style = "
+    float: left;
+    width: 10px;
+    height: #{choice.expect}px;
+    margin-right: 1px;
+    background-color: #bbb;
+    text-align:center;
+    font-size: 80%;
+  "
   "<span style=\"#{style}\">#{choice.letter}</span>"
 
 graph = ($graph) ->
   $graph.empty()
-  $graph.append (plot choice for choice in alphabet).join('')
+  $graph.append (bar choice for choice in alphabet).join('')
 
 # adapt
 
