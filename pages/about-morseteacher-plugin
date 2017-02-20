@@ -35,6 +35,11 @@
       "type": "paragraph",
       "id": "a0f108104c59ba4a",
       "text": "This plugin will teach you to copy at a speed of about five words per minute. Learning to copy faster requires a different kind of practice."
+    },
+    {
+      "type": "paragraph",
+      "id": "89ab3a99a3a0284f",
+      "text": "See [[More About MorseTeacher]]"
     }
   ],
   "journal": [
@@ -252,6 +257,17 @@
         "text": "This plugin will teach you to copy at a speed of about five words per minute. Learning to copy faster requires a different kind of practice."
       },
       "date": 1425911367916
+    },
+    {
+      "type": "add",
+      "id": "89ab3a99a3a0284f",
+      "item": {
+        "type": "paragraph",
+        "id": "89ab3a99a3a0284f",
+        "text": "See [[More About MorseTeacher]]"
+      },
+      "after": "a0f108104c59ba4a",
+      "date": 1487559499462
     }
   ]
 }

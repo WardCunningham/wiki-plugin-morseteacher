@@ -1,0 +1,132 @@
+{
+  "title": "More About MorseTeacher",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "28e3d60d4f76bb88",
+      "text": "This teaching machine comes from a series of implementations using the same algorithm dating back to the '70s. History and downloads available online. [http://c2.com/morse/ site]"
+    },
+    {
+      "type": "paragraph",
+      "id": "0ec9568b9c85ae0b",
+      "text": "The plugin is maintained as open-source. [https://github.com/WardCunningham/wiki-plugin-morseteacher github]"
+    },
+    {
+      "type": "paragraph",
+      "id": "47aab3a647bb6022",
+      "text": "This implementation was precipitated by the 2015 wiki happening focusing on teaching machines. The tone of the conversation there was negative especially with respect to innovations that disregarded learning theory. Computer pioneer Saul Rosen remarked with respect to the first version, morse code is one thing successfully taught by machine."
+    },
+    {
+      "type": "reference",
+      "id": "832e699f52546301",
+      "site": "h2.ward.asia.wiki.org",
+      "slug": "how-to-learn-morse",
+      "title": "How to Learn Morse",
+      "text": "Learning to hear letters in morse code requires practice at auditory distinction well suited to mechanical instruction. However, the obsolescence of the task has prevented ongoing investment in morse teaching technology. Could this inattention make learning morse an excellent testbed for advanced learning mechanisms?"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "More About MorseTeacher",
+        "story": []
+      },
+      "date": 1487559503237
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "28e3d60d4f76bb88"
+      },
+      "id": "28e3d60d4f76bb88",
+      "type": "add",
+      "date": 1487559522886
+    },
+    {
+      "type": "edit",
+      "id": "28e3d60d4f76bb88",
+      "item": {
+        "type": "paragraph",
+        "id": "28e3d60d4f76bb88",
+        "text": "This teaching machine comes from a series of implementations using the same algorithm dating back to the late '70s. "
+      },
+      "date": 1487559627828
+    },
+    {
+      "type": "edit",
+      "id": "28e3d60d4f76bb88",
+      "item": {
+        "type": "paragraph",
+        "id": "28e3d60d4f76bb88",
+        "text": "This teaching machine comes from a series of implementations using the same algorithm dating back to the late '70s. History and downloads can be found online. [http://c2.com/morse/ site]"
+      },
+      "date": 1487559698537
+    },
+    {
+      "type": "edit",
+      "id": "28e3d60d4f76bb88",
+      "item": {
+        "type": "paragraph",
+        "id": "28e3d60d4f76bb88",
+        "text": "This teaching machine comes from a series of implementations using the same algorithm dating back to the late '70s. History and downloads available online. [http://c2.com/morse/ site]"
+      },
+      "date": 1487559713999
+    },
+    {
+      "type": "edit",
+      "id": "28e3d60d4f76bb88",
+      "item": {
+        "type": "paragraph",
+        "id": "28e3d60d4f76bb88",
+        "text": "This teaching machine comes from a series of implementations using the same algorithm dating back to the '70s. History and downloads available online. [http://c2.com/morse/ site]"
+      },
+      "date": 1487559724383
+    },
+    {
+      "type": "add",
+      "id": "0ec9568b9c85ae0b",
+      "item": {
+        "type": "paragraph",
+        "id": "0ec9568b9c85ae0b",
+        "text": "The plugin is maintained as open-source. [https://github.com/WardCunningham/wiki-plugin-morseteacher github]"
+      },
+      "after": "28e3d60d4f76bb88",
+      "date": 1487559993786
+    },
+    {
+      "type": "add",
+      "id": "47aab3a647bb6022",
+      "item": {
+        "type": "paragraph",
+        "id": "47aab3a647bb6022",
+        "text": "This implementation was precipitated by the 2015 wiki happening focusing on teaching machines. The tone of the conversation there was negative especially with respect to innovations that disregarded learning theory. Computer pioneer Saul Rosen remarked with respect to the first version, morse code is one thing successfully taught by machine."
+      },
+      "after": "0ec9568b9c85ae0b",
+      "date": 1487560335314
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "832e699f52546301"
+      },
+      "id": "832e699f52546301",
+      "type": "add",
+      "after": "47aab3a647bb6022",
+      "date": 1487560338608
+    },
+    {
+      "type": "edit",
+      "id": "832e699f52546301",
+      "item": {
+        "type": "reference",
+        "id": "832e699f52546301",
+        "site": "h2.ward.asia.wiki.org",
+        "slug": "how-to-learn-morse",
+        "title": "How to Learn Morse",
+        "text": "Learning to hear letters in morse code requires practice at auditory distinction well suited to mechanical instruction. However, the obsolescence of the task has prevented ongoing investment in morse teaching technology. Could this inattention make learning morse an excellent testbed for advanced learning mechanisms?"
+      },
+      "date": 1487560345785
+    }
+  ]
+}
