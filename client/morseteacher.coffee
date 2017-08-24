@@ -5,7 +5,7 @@ observe = 100
 # sound
 
 setup = ->
-  ctx ||= new ((window?.audioContext or window?.webkitAudioContext))
+  ctx ||= new ((window?.AudioContext or window?.webkitAudioContext))
   osc = ctx.createOscillator()
   osc.type = 'sine'
   osc.frequency.value = 1000
