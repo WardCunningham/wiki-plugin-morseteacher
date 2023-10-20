@@ -1,6 +1,6 @@
 {
   "name": "wiki-plugin-morseteacher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Federated Wiki - MorseTeacher Plugin",
   "keywords": [
     "morseteacher",
@@ -20,12 +20,12 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "grunt": "~0.4",
-    "grunt-contrib-coffee": "~0.12",
-    "grunt-contrib-watch": "~0.6",
-    "mocha": "*",
     "expect.js": "*",
-    "grunt-mocha-test": "~0.12"
+    "grunt": "^1.6.1",
+    "grunt-contrib-coffee": "^2.1.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-mocha-test": "~0.12",
+    "mocha": "*"
   },
   "license": "MIT",
   "repository": {
@@ -34,8 +34,5 @@
   },
   "bugs": {
     "url": "https://github.com/fedwiki/wiki-plugin-morseteacher/issues"
-  },
-  "engines": {
-    "node": "0.10"
   }
 }
